@@ -1,0 +1,73 @@
+---
+import Heart from "@lucide/astro/icons/heart"
+import MessageSquare from "@lucide/astro/icons/message-square"
+import ChevronRight from "@lucide/astro/icons/chevron-right"
+
+---
+<div class="gap-8 grid md:grid-cols-2 lg:grid-cols-4 px-4 lg:px-8" >
+
+		<article class="space-y-2 p-2 border-2 border-gray-200 hover:border-gray-300 border-solid rounded-xl transition-transform hover:-translate-y-1.5" >
+
+			<section class="bg-pink-700 w-full h-48" >
+
+			</section>
+
+			<h2 class="block mt-2 mb-1 font-bold text-lg" >
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, iste.
+			</h2>
+
+			<p class="text-wrap" >
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illo provident veniam maiores. Ab voluptate quas a. Accusamus qui dolorum similique  ...
+			</p>
+
+			<section class="flex justify-between mt-3">
+
+				<a href="#" class="flex items-center p-1.5 rounded text-base cursor-pointer btn" >
+                    Lire <ChevronRight  class="-translate-x-0.5" />
+                </a>
+
+                <button class="flex rounded btn" >
+					<Heart/>
+					<span>10</span>
+
+				</button>
+
+				<button class="flex rounded btn" >
+					<MessageSquare />
+					<span>0</span>
+				</button>
+
+			</section>
+
+		</article>
+
+        <article class="space-y-2 p-2 border-2 border-gray-200 hover:border-gray-300 border-solid rounded-xl transition-transform hover:-translate-y-1.5" >
+
+			<section class="bg-pink-700 w-full h-48" >
+
+			</section>
+
+			<p class="text-wrap" >
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illo provident veniam maiores. Ab voluptate quas a. Accusamus qui dolorum similique debitis dolor sapiente dolorem ...
+			</p>
+
+			<section class="flex justify-between mt-3">
+
+				<a href="#" class="flex items-center p-1.5 rounded text-base cursor-pointer btn" >
+                    Lire <ChevronRight  class="-translate-x-0.5" />
+                </a>
+
+                <button class="rounded btn" >
+					<Heart class="fill-red-500" />
+				</button>
+
+				<button class="flex rounded btn" >
+					<MessageSquare />
+					<span>0</span>
+				</button>
+
+			</section>
+
+		</article>
+		
+	</div>
