@@ -1,0 +1,41 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Arrow from "@lucide/astro/icons/arrow-left"
+---
+
+<Layout title='Register'>
+    <div class="min-h-screen hero">
+
+      <div class="lg:flex-row-reverse flex-col lg:w-2/3 hero-content">
+        <div class="lg:text-left text-center">
+          <h1 class="font-bold text-3xl lg:text-5xl">Nouveau compte</h1>
+          <p class="py-4 max-w-3xl">
+            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+            quasi. In deleniti eaque aut repudiandae et a id nisi.
+          </p>
+        </div>
+
+        <div class="shadow-md border-[1px] border-gray-200 w-full max-w-sm card shrink-0">
+          <div class="card-body">
+
+            <section class="mb-4">
+              <a href="/" class="group flex justify-start items-center hover:underline">
+                <Arrow class='transition-transform group-hover:-translate-x-1.5'/>
+                <strong>Accueil</strong>
+              </a>
+            </section>
+
+            <fieldset class="fieldset">
+              <label class="label">Email</label>
+              <input type="email" class="input" placeholder="awa@gmail.com" />
+              <label class="label">Mot de passe</label>
+              <input type="password" class="input" placeholder="Mot de passe" />
+              <div class="my-2" ><a href="#" class="link link-hover">Se connecter?</a></div>
+              <button class="mt-4 btn btn-neutral">Je m'enregistre</button>
+            </fieldset>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</Layout>

@@ -3,7 +3,7 @@ import LogIn from "@lucide/astro/icons/log-in"
 import UserPlus from "@lucide/astro/icons/user-plus"
 
 ---
-<header class="flex justify-center mt-5 mb-7 w-full" >
+<header class="flex justify-center mt-5 mb-4 w-full" >
 
     <nav class="flex justify-between p-3 border-2 border-gray-200 rounded-3xl w-1/2 text-base" >
 
@@ -25,12 +25,18 @@ import UserPlus from "@lucide/astro/icons/user-plus"
             
             <li class="flex items-center">
                 <LogIn class="mr-1 size-4" />
-                Se connecter
+                <a href="/login">Se connecter</a>
             </li>
+
             <li class="bg-gray-300 mx-1.5 w-0.5 h-full" ></li>
+
             <li class="flex items-center">
-                <UserPlus class="mr-1 size-4" />
-                S'inscrire
+                
+                <a href="/register" class="flex items-center">
+                    <UserPlus class="mr-1 size-4" />
+                    S'inscrire
+                </a>
+
             </li>
 
         </ul>

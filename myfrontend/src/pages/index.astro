@@ -2,56 +2,18 @@
 import Layout from '../layouts/Layout.astro';
 import Cards from "../components/home/Cards.astro"
 import Header from "../components/shared/Header.astro"
-
-import Plus from "@lucide/astro/icons/plus"
-
-
-import "../styles/global.css"
-
-
+import Footer from "../components/shared/Footer.astro"
+import Welcome from '../components/home/Welcome.astro';
 ---
 
 <Layout>
 
 	<Header />
+
+	<Welcome />
 	
-	<div>
-
-		<p class="mx-auto mt-14 w-1/2 text-gray-500 text-lg text-center" >
-			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque repellendus sapiente odio officiis cum soluta, minus totam maxime qui vitae!
-		</p>
-
-		<section class="flex justify-center space-x-3 my-6" >
-
-			<button class="text-base btn btn-primary" >
-				Tous
-			</button>
-
-			<button class="text-base btn btn-info">
-				Tutoriel
-			</button>
-
-			<button class="text-base btn btn-accent">
-				Carrière
-			</button>
-
-			<button class="text-base btn btn-error">
-				Opinion
-			</button>
-
-			<button class="text-base btn btn-secondary">
-				Opinion
-			</button>
-			
-		</section>
-
-		<section class="my-8">
-			<button class="flex justify-around mx-auto rounded text-base btn btn-neutral">
-				<Plus />Écrire un article
-			</button>
-		</section>
-	</div>
-
 	<Cards />
+
+	<Footer />
 
 </Layout>
