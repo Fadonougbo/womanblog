@@ -9,14 +9,14 @@ interface Props {
 const {title}=Astro.props
 ---
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title??'Woman Blog'}</title>
 	</head>
-	<body>
+	<body class="bg-white" >
 		<slot />
 	</body>
 </html>

@@ -3,19 +3,21 @@ import LogIn from "@lucide/astro/icons/log-in"
 import UserPlus from "@lucide/astro/icons/user-plus"
 
 ---
-<header class="flex justify-center mt-5 mb-4 w-full" >
+<header class=" justify-center mb-4 w-full  hidden md:flex bg-white" >
 
-    <nav class="flex justify-between p-3 border-2 border-gray-200 rounded-3xl w-1/2 text-base" >
+    <nav class="flex justify-between p-3 border mt-4 border-gray-200 rounded-3xl w-[80%]  lg:w-[65%] xl:w-1/2  text-base " >
 
         <ul class="space-x-3 w-full" >
 
-            <li class="inline-block bg-neutral px-2.5 py-0.5 rounded-2xl text-neutral-content" >
+            <li class="inline-block bg-neutral px-2.5 py-1 rounded-2xl text-neutral-content" >
                 Accueil
             </li>
-            <li class="inline-block px-2.5 py-0.5 rounded-2xl" >
+
+            <li class="inline-block px-2.5  rounded-2xl py-1" >
                 Forum
             </li>
-            <li class="inline-block px-2.5 py-0.5 rounded-2xl" >
+
+            <li class="inline-block px-2.5  rounded-2xl py-1" >
                 Communauté
             </li>
 
@@ -23,16 +25,16 @@ import UserPlus from "@lucide/astro/icons/user-plus"
 
         <ul class="flex justify-end w-full" >
             
-            <li class="flex items-center">
+            <li class="flex items-center hover:text-gray-500">
                 <LogIn class="mr-1 size-4" />
-                <a href="/login">Se connecter</a>
+                <a href="/auth/login">Se connecter</a>
             </li>
 
             <li class="bg-gray-300 mx-1.5 w-0.5 h-full" ></li>
 
-            <li class="flex items-center">
+            <li class="flex items-center hover:text-gray-500">
                 
-                <a href="/register" class="flex items-center">
+                <a href="/auth/register" class="flex items-center">
                     <UserPlus class="mr-1 size-4" />
                     S'inscrire
                 </a>
