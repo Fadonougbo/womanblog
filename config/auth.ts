@@ -12,6 +12,8 @@ const authConfig = defineConfig({
       }),
     }),
   },
+
+  
 })
 
 export default authConfig
